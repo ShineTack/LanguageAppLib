@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using LanguageAppLib.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,6 +10,7 @@ namespace LanguageAppLib
 {
     public abstract class AppDbContext : DbContext
     {
-
+        public DbSet<Language> Languages { get; set; }
+        public DbSet<Word> Words { get; set; }
     }
 }

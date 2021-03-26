@@ -9,7 +9,7 @@ namespace LanguageAppLib.Model
     /// Модель обьекта языка
     /// </summary>
     [Index(nameof(Name))]
-    class Language
+    public class Language
     {
         /// <summary>
         /// Id языка в таблице 
